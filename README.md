@@ -1,6 +1,6 @@
 # Game changer
 
-It's the second checkpoint at the wild code School.
+It's the second checkpoint at the Wild Code School.
 
 The purpose of this exercise is to assess the following skills :
 
