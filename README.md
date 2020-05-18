@@ -13,4 +13,4 @@ The purpose of this exercise is to assess the following skills :
 
 ## Production (on Netlify)
 
-You can see the result [here](game-changer.netlify.app)
+You can see the result [here](https://game-changer.netlify.app/)
