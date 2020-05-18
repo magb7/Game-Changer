@@ -1,0 +1,70 @@
+.link-wrapper {
+  margin: 30px auto;
+}
+
+.game-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 500px;
+  height: 35vh;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid black;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.game-wrapper:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.3s all;
+  cursor: pointer;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.info-wrapper h2 {
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  color: rgb(240, 239, 239);
+  font-family: "Teko", sans-serif;
+  text-shadow: -1px 2px 2px #292929, 1px 2px 2px #292929, 1px -2px 0 #292929,
+    -1px -2px 0 #292929;
+  letter-spacing: 0.1rem;
+}
+
+.details-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4px;
+}
+
+.details-wrapper p {
+  font-size: 1.1rem;
+}
+
+.delete-btn {
+  justify-self: flex-start;
+  align-self: flex-end;
+  margin: 5px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  color: #292929;
+  text-shadow: 0px 0px 4px white;
+}
+
+.delete-btn:hover {
+  color: rgb(197, 1, 1);
+}
