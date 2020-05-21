@@ -8,8 +8,7 @@ const Game = ({ gameInfo, deleteGame }) => {
       <div
         className="game-wrapper"
         style={{
-          background: `no-repeat center/100% url(${gameInfo.background_image})`,
-          objectFit: "cover",
+          background: `no-repeat center/130% url(${gameInfo.background_image})`,
         }}
       >
         <button onClick={() => deleteGame(gameInfo.id)} className="delete-btn">
