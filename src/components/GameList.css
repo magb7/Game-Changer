@@ -45,3 +45,12 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 980px) {
+  .sortGame {
+    font-size: 1.2rem;
+    width: 100px;
+  }
+}

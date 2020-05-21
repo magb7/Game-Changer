@@ -25,7 +25,7 @@ const Screenshots = () => {
     <div
       className="screenshot-container"
       style={{
-        background: `no-repeat center/100% url(${gameInfo[0].background_image})`,
+        backgroundImage: `url(${gameInfo[0].background_image})`,
       }}
     >
       <div className="top-bar">
@@ -36,44 +36,21 @@ const Screenshots = () => {
       </div>
 
       <div className="content-wrapper">
-        <div className="grid-wrapper">
-          {gameInfo[0] ? (
-            gameInfo[0].short_screenshots.map((screenshot, index) => {
-              return (
-                <a href={screenshot.image} target="_blank">
-                  <figure key={index}>
-                    <img
-                      src={screenshot.image}
-                      alt="Screenshot from the game"
-                    />
-                  </figure>
-                </a>
-              );
-            })
-          ) : (
-            <figure>
-              <p>Loading...</p>
-            </figure>
-          )}
-        </div>
-        <div className="right-wrapper">
-          <ul>
-            <li>
-              <strong>Release date: </strong>
-              {gameInfo[0].released}
-            </li>
-            <li>
-              <strong>Rate: </strong>
-              {gameInfo[0].rating}
-            </li>
-            <ul>
-              <strong>Genres:</strong>
-              {gameInfo[0].genres.map((genre, index) => {
-                return <li key={index}>{genre.name}</li>;
-              })}
-            </ul>
-          </ul>
-        </div>
+        {gameInfo[0] ? (
+          gameInfo[0].short_screenshots.map((screenshot, index) => {
+            return (
+              <a href={screenshot.image} target="_blank">
+                <img
+                  src={screenshot.image}
+                  alt="Screenshot from the game"
+                  key={index}
+                />
+              </a>
+            );
+          })
+        ) : (
+          <p>Loading...</p>
+        )}
       </div>
     </div>
   );
