@@ -17,7 +17,7 @@
 
 .game-wrapper:hover {
   transform: scale(1.05);
-  transition: ease-in-out 0.3s all;
+  transition: ease-in 0.4s all;
   cursor: pointer;
 }
 
