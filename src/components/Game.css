@@ -22,15 +22,19 @@
 }
 
 .info-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "title title";
+  align-items: center;
+  justify-items: center;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.info-wrapper h2 {
-  text-align: center;
+.title {
+  grid-area: title;
+  justify-self: center;
   font-size: 30px;
-  width: 100%;
   color: rgb(240, 239, 239);
   font-family: "Teko", sans-serif;
   text-shadow: -1px 2px 2px #292929, 1px 2px 2px #292929, 1px -2px 0 #292929,
@@ -38,16 +42,7 @@
   letter-spacing: 0.1rem;
 }
 
-.details-wrapper {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 4px;
-}
-
-.details-wrapper p {
+.info-wrapper p {
   font-size: 1.1rem;
 }
 
