@@ -9,17 +9,16 @@ const Game = ({ gameInfo, deleteGame }) => {
         className="game-wrapper"
         style={{
           background: `no-repeat center/100% url(${gameInfo.background_image})`,
+          objectFit: "cover",
         }}
       >
         <button onClick={() => deleteGame(gameInfo.id)} className="delete-btn">
           X
         </button>
         <div className="info-wrapper">
-          <h2>{gameInfo.name}</h2>
-          <div className="details-wrapper">
-            <p>release date: {gameInfo.released}</p>
-            <p>rate: {gameInfo.rating}</p>
-          </div>
+          <h2 className="title">{gameInfo.name}</h2>
+          <p>Release date: {gameInfo.released}</p>
+          <p>Rate: {gameInfo.rating}</p>
         </div>
       </div>
     </Link>
